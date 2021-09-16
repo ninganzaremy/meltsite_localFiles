@@ -1,0 +1,39 @@
+{
+  "name": "ex_webpack5",
+  "version": "0.0.0",
+  "description": "Webpack 5 Video Tutorials Exercise Files",
+  "scripts": {
+    "git:commit": "cz",
+    "build": "./node_modules/.bin/webpack",
+    "build:watch": "./node_modules/.bin/webpack --watch",
+    "serve": "./node_modules/.bin/webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapidevelop/ex_webpack5.git"
+  },
+  "keywords": [],
+  "author": "Iman Vafadarnezhad",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rapidevelop/ex_webpack5/issues"
+  },
+  "homepage": "https://github.com/rapidevelop/ex_webpack5#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
