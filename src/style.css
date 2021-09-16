@@ -1,382 +1,479 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #e2e2e2;
+	margin: 0;
+	padding: 0;
+	/* background-color: #E2E2E2; */
 }
 .top-section {
-  position: relative;
-  height: 1100px;
-  width: 100%;
-  background-color: #5b85b9;
+	position: relative;
+	height: 1100px;
+	width: 100%;
+	background: #5b8db9;
 }
 
 .top-section::before {
-  content: '';
-  background-image: url('./images/man-with-tie.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.1;
+	content: "";
+	background-image: url("./images/man_with_tie.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.1;
 }
 
 header {
-  /* max-width: 1200px; */
-  /* margin: 20px auto; */
-  padding: 10px 40px;
-  background: transparent;
-  box-sizing: border-box;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
+	/* max-width: 1200px; */
+	/* margin: 20px auto; */
+	padding: 10px 40px;
+	background: transparent;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
 .logo {
-  color: white;
-  height: 60px;
-  font-size: 36px;
-  line-height: 60px;
-  text-align: center;
-  box-sizing: border-box;
-  float: left;
-  font-weight: 700;
-  text-decoration: none;
+	color: white;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	/*padding: 0 20px;*/
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
 }
 nav {
-  float: right;
+	float: right;
 }
 .clearfix {
-  clear: both;
+	clear: both;
 }
 nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 nav ul li {
-  list-style: none;
+	list-style: none;
 }
 nav ul li a {
-  display: block;
-  margin: 10px 0;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: white;
-  transition: opacity 0.3s ease;
+	display: block;
+	margin: 10px 0;
+	padding: 10px 10px;
+	text-decoration: none;
+	color: white;
 }
 nav ul li a.active,
 nav ul li a:hover {
-  background: transparent;
-  color: white;
-  transition: 0.5s;
-  text-decoration: underline;
+	background: transparent;
+	color: white;
+	transition: 0.5s;
 }
+nav ul li a:hover {
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-decoration-style: solid;
+	text-underline-offset: 10px;
+	line-height: 1;
+}
+
 /* ................End of Nav.............. */
 .slider {
-  margin: auto;
-  text-align: center;
-  height: 90%;
-  position: relative;
+	margin: auto;
+	text-align: center;
+	height: 90%;
+	position: relative;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 10px;
-  padding: 10px;
-  margin: 0;
-  height: 80%;
-  width: 92%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-gap: 10px;
+	padding: 10px;
+	margin: 0;
+	height: 80%;
+	width: 92%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  height: 50%;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	height: 50%;
 }
 .slider-col-one {
-  grid-area: 1 / 1 / 1 / 2;
+	grid-area: 1 / 1 / 1 / 2;
 }
 .slider-col-two {
-  grid-area: 1 / 2 / 2 / 3;
+	grid-area: 1 / 2 / 2 / 3;
 }
-.slider-col-two img {
-  height: 180%;
+.slider-col-two {
+	width: 100%;
+	height: 100%;
 }
+
 .slider-col-one h3 {
-  color: #fff;
-  font-weight: 100;
-  text-align: left;
+	color: #fff;
+	font-weight: 100;
+	text-align: left;
 }
 .font-weight {
-  color: #fff;
-  font-weight: 800;
+	color: #fff;
+	font-weight: 800;
 }
 .slider-col-one p {
-  color: #fff;
-  font-size: 22px;
-  text-align: left;
+	color: #fff;
+	font-size: 22px;
+	text-align: left;
 }
 
 /* .............................What we do................................. */
 .what-we-do {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px 100px;
-  background-color: #f2f2f2;
-}
-.what-we-do h1 {
-  font-size: 50px;
-  color: #8cb8e9;
-  font-weight: 100;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 10px;
+	padding: 10px 100px;
 }
 
 .what-we-do > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
 }
 .what-we-do i {
-  font-size: 70px;
-  color: #828282;
+	font-size: 70px;
+	color: #828282;
+}
+.what-we-do-section h1 {
+	font-size: 50px;
+	color: #8cb8e9;
+	font-weight: 100;
 }
 .item1 {
-  grid-area: 1 / 1 / 2 / 6;
+	grid-area: 1 / 1 / 2 / 6;
 }
 .item2 {
-  grid-area: 2 / 1 / 3 / 6;
+	grid-area: 2 / 1 / 3 / 6;
 }
 .item3 {
-  grid-area: 3 / 1 / 4 / 2;
+	grid-area: 3 / 1 / 4 / 2;
 }
 .item4 {
-  grid-area: 3 / 2 / 4 / 3;
+	grid-area: 3 / 2 / 4 / 3;
 }
 .item5 {
-  grid-area: 3 / 3 / 4 / 4;
+	grid-area: 3 / 3 / 4 / 4;
 }
 .item6 {
-  grid-area: 3 / 4 / 4 / 5;
+	grid-area: 3 / 4 / 4 / 5;
 }
 .item7 {
-  grid-area: 3 / 5 / 4 / 6;
+	grid-area: 3 / 5 / 4 / 6;
 }
 
 /* ......Call for superhero......... */
 
 .call-for-superhero {
-  background-image: url('./images/Block4.gif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  width: 100%;
+	background-image: url("./images/Block4.gif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	width: 100%;
 }
 .superhero {
-  padding: 30px;
-  margin: 0;
-  background-color: #333333;
-  border: 1px solid black;
-  opacity: 0.9;
+	padding: 30px;
+	margin: 0;
+	background-color: #333333;
+	border: 1px solid black;
+	opacity: 0.9;
 }
 .superhero h1 {
-  font-size: 50px;
-  color: #f8f5fa;
-  font-weight: 100;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 100;
 }
 /* ......................Button..................... */
 .button {
-  background-color: transparent;
-  color: #fff;
-  padding: 10px 20px;
-  border: 2px solid #fff;
-  font-size: 20px;
+	background-color: transparent;
+	color: #fff;
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	font-size: 20px;
 }
 .button:hover {
-  cursor: pointer;
-  font-weight: bold;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 1;
 }
 .form-button {
-  background-color: transparent;
-  color: #333;
-  padding: 10px 20px;
-  border: 2px solid #333;
-  font-size: 20px;
+	background-color: transparent;
+	color: #333;
+	padding: 10px 20px;
+	border: 2px solid #333;
+	font-size: 20px;
 }
 .form-button:hover {
-  cursor: pointer;
-  font-weight: bold;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 1;
 }
 
 /* ..........video............ */
+.video-section {
+	padding: 70px 0px;
+	background-color: #e9e9e9;
+}
 .video {
-  margin: auto;
-  text-align: center;
-  position: relative;
-  padding: 50px;
-  height: 500px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+
+	height: 500px;
 }
 .video video {
-  padding: 50px 100px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* ..................google-map-section................... */
+.google-map-section {
+	position: relative;
+}
+.get-in-touch {
+	position: absolute;
+	top: 9%;
+	left: 10px;
+	background-color: black;
+	padding: 10px;
+	color: #fff;
+	opacity: 0.7;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social-icons p {
+	margin: 0;
+	padding: 0px 10px;
+	font-size: 30px;
+}
+.social-icons p a {
+	color: #fff;
+}
+.social-icons p a:hover {
+	color: red;
 }
 
 /* ...........Contact-us-section............. */
 .contact-us-section h1 {
-  font-size: 50px;
-  color: #8cb8e9;
-  font-weight: 100;
+	font-size: 50px;
+	color: #8cb8e9;
+	font-weight: 100;
 }
 .contact-us-section p {
-  font-size: 20px;
-  font-weight: 100;
+	font-size: 20px;
+	font-weight: 100;
 }
 .contact-us-section .font-weight {
-  color: #8cb8e9;
-  font-weight: 800;
+	color: #8cb8e9;
+	font-weight: 800;
 }
 .contact-us-section {
-  padding: 50px 100px;
-  text-align: center;
+	padding: 50px 100px;
+	text-align: center;
 }
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-input[type='text'],
-input[type='email'],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
 }
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
 }
 .col-50 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
+	float: left;
+	width: 50%;
+	margin-top: 6px;
 }
 .col-100 {
-  float: left;
-  width: 100%;
-  margin-top: 6px;
+	float: left;
+	width: 100%;
+	margin-top: 6px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: '';
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 footer {
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-  background-color: #89b9ea;
-  padding: 20px 100px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	background-color: #89b9ea;
+	padding: 10px;
 }
 
 /* -----------------------------Responsive style start from here----------------------------- */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    background: #ccc;
-    float: right;
-    cursor: pointer;
-    text-align: center;
-    font-size: 30px;
-    /* color: #069370; */
-  }
-  .menu-toggle::before {
-    content: '\f0c9';
-    font-family: fontAwesome;
-    line-height: 40px;
-  }
-  .menu-toggle.active::before {
-    content: '\f00d';
-  }
-  nav {
-    display: none;
-  }
-  nav.active {
-    display: block;
-    width: 100%;
-    padding-left: 10px;
-  }
-  nav.active ul {
-    display: block;
-  }
-  nav.active ul li a {
-    margin: 0;
-  }
-  /* ----slider----- */
-  .slider-col-one {
-    grid-area: 1 / 1 / 2 / 6;
-  }
-  .slider-col-two {
-    grid-area: 2 / 1 / 3 / 6;
-  }
-  .slider-col-two img {
-    height: 87%;
-  }
+	.menu-toggle {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		background: #ccc;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		/* color: #069370; */
+	}
+	.menu-toggle::before {
+		content: "\f0c9";
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+	.menu-toggle.active::before {
+		content: "\f00d";
+	}
+	nav {
+		display: none;
+	}
+	nav.active {
+		display: block;
+		width: 100%;
+		padding-left: 10px;
+	}
+	nav.active ul {
+		display: block;
+	}
+	nav.active ul li a {
+		margin: 0;
+	}
+	/* ----slider----- */
+	.slider-col-one {
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.slider-col-two {
+		grid-area: 2 / 1 / 3 / 3;
+	}
+	.slider-col-two {
+		width: 100%;
+		height: 100%;
+	}
+	.slider-col-two img {
+		height: 100%;
+	}
 
-  /*....... what we do....... */
+	.grid-container > div {
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		height: 50%;
+	}
 
-  .item1 {
-    grid-area: 1 / 1 / 2 / 6;
-  }
-  .item2 {
-    grid-area: 2 / 1 / 3 / 6;
-  }
-  .item3 {
-    grid-area: 3 / 1 / 4 / 6;
-  }
-  .item4 {
-    grid-area: 4 / 1 / 5 / 6;
-  }
-  .item5 {
-    grid-area: 5 / 1 / 6 / 6;
-  }
-  .item6 {
-    grid-area: 6 / 1 / 7 / 6;
-  }
-  .item7 {
-    grid-area: 7 / 1 / 8 / 6;
-  }
-  .what-we-do {
-    padding: 10px 50px;
-  }
+	/*....... what we do....... */
+	.what-we-do-section {
+		padding: 50px 0px;
+	}
 
-  .what-we-do i {
-    font-size: 120px;
-  }
-  /* ...........Contact Us.............. */
-  .contact-us-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
+	.item1 {
+		grid-area: 1 / 1 / 2 / 6;
+	}
+	.item2 {
+		grid-area: 2 / 1 / 3 / 6;
+	}
+	.item3 {
+		grid-area: 3 / 1 / 4 / 6;
+	}
+	.item4 {
+		grid-area: 4 / 1 / 5 / 6;
+	}
+	.item5 {
+		grid-area: 5 / 1 / 6 / 6;
+	}
+	.item6 {
+		grid-area: 6 / 1 / 7 / 6;
+	}
+	.item7 {
+		grid-area: 7 / 1 / 8 / 6;
+	}
+	.what-we-do {
+		padding: 10px 50px;
+	}
+
+	.what-we-do i {
+		font-size: 50vw;
+	}
+	/* .................Google map................... */
+	.get-in-touch h1 {
+		font-size: 16px;
+	}
+	.get-in-touch p {
+		font-size: 12px;
+	}
+	.social-icons p {
+		margin: 0;
+		padding: 0px 10px;
+		font-size: 20px;
+	}
+
+	/* ...........Contact Us.............. */
+	.contact-us-section {
+		padding: 50px 20px;
+		text-align: center;
+	}
+	/* ...................video..................... */
+	.video-section {
+		padding: 0px;
+	}
+	.video {
+		margin: auto;
+		text-align: center;
+		position: relative;
+		padding: 0;
+	}
+	.video video {
+		width: 100%;
+		padding: 10px 20px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	/* .............footer...................... */
+	footer {
+		text-align: center;
+		font-size: 15px;
+		color: #fff;
+		background-color: #89b9ea;
+		padding: 5px;
+	}
 }
